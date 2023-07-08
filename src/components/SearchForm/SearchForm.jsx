@@ -18,12 +18,7 @@ export const SearchForm = () => {
   const handleSubmit = e => {
     e.preventDefault();
 
-    const todo = {
-      id: nanoid(),
-      text: query,
-    };
-
-    dispatch(addTodo(todo));
+    dispatch(addTodo(query));
 
     setQuery('');
   };

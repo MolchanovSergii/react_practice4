@@ -21,7 +21,7 @@ const TodoList = () => {
                 id={todo.id}
                 text={todo.text}
                 counter={index + 1}
-                // onClick={this.deleteTodo}
+                likes={todo.likes}
               />
             </GridItem>
           ))}
