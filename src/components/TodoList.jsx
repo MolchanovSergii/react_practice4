@@ -2,9 +2,11 @@ import { Grid } from './Grid/Grid.styled';
 import { GridItem } from './Grid/Grid.styled';
 import { Todo } from './Todo/Todo';
 import { Text } from './Text/Text.styled';
+import { useSelector } from 'react-redux';
+import { selectTodos } from 'redux/selectors';
 
 const TodoList = () => {
-  const todos = [{ id: 1, text: 'potato' }];
+  const todos = useSelector(selectTodos);
 
   return (
     <>
