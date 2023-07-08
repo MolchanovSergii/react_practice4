@@ -38,7 +38,7 @@ export const LikeButton = styled.button`
 
 export const EditButton = styled.button`
   position: absolute;
-  bottom: 0;
+  top: 70px;
   right: 0;
 
   padding: ${({ theme }) => theme.spacing(2.5)};
@@ -48,5 +48,26 @@ export const EditButton = styled.button`
   &:hover,
   &:focus {
     transform: scale(1.05);
+  }
+`;
+
+export const InputEdit = styled.input`
+  width: 80%;
+
+  border-style: none;
+  border-bottom: 1px solid ${({ theme }) => theme.colors.dark};
+  background-color: transparent;
+
+  outline: none;
+
+  transition: ${({ theme }) => theme.animation.cubicBezier};
+
+  font-size: ${({ theme }) => theme.fontSizes.medium};
+  color: ${({ theme }) => theme.colors.dark};
+  font-weight: 300;
+  letter-spacing: 0.03em;
+
+  &::placeholder {
+    font-weight: 200;
   }
 `;
