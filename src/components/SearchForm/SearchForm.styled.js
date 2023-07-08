@@ -13,6 +13,7 @@ export const SearchFormStyled = styled.form`
 export const InputSearch = styled.input`
   width: 100%;
   height: ${({ theme }) => theme.spacing(14)};
+  margin-bottom: 20px;
 
   border-style: none;
   border-bottom: 1px solid ${({ theme }) => theme.colors.dark};
